@@ -1,0 +1,19 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'lxm1_lxm_residents',
+    'varName' => 'lxm1_lxm_residents',
+    'orderBy' => 'lxm1_lxm_residents.name',
+    'whereClauses' => array (
+  'name' => 'lxm1_lxm_residents.name',
+),
+    'searchInputs' => array (
+  1 => 'name',
+),
+    'searchdefs' => array (
+  'name' => 
+  array (
+    'name' => 'name',
+    'width' => '10%',
+  ),
+),
+);

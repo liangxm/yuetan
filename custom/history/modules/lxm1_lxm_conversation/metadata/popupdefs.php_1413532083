@@ -1,0 +1,31 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'lxm1_lxm_conversation',
+    'varName' => 'lxm1_lxm_conversation',
+    'orderBy' => 'lxm1_lxm_conversation.name',
+    'whereClauses' => array (
+  'name' => 'lxm1_lxm_conversation.name',
+),
+    'searchInputs' => array (
+  0 => 'lxm1_lxm_conversation_number',
+  1 => 'name',
+  2 => 'priority',
+  3 => 'status',
+),
+    'listviewdefs' => array (
+  'TALK_TIME' => 
+  array (
+    'type' => 'datetimecombo',
+    'label' => 'LBL_TALK_TIME',
+    'width' => '20%',
+    'default' => true,
+  ),
+  'TALK_PLACE' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_TALK_PLACE',
+    'width' => '20%',
+    'default' => true,
+  ),
+),
+);

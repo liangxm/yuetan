@@ -1,0 +1,76 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'lxm1_lxm_conversation',
+    'varName' => 'lxm1_lxm_conversation',
+    'orderBy' => 'lxm1_lxm_conversation.name',
+    'whereClauses' => array (
+  'talk_time' => 'lxm1_lxm_conversation.talk_time',
+),
+    'searchInputs' => array (
+  4 => 'talk_time',
+),
+    'searchdefs' => array (
+  'talk_time' => 
+  array (
+    'type' => 'datetimecombo',
+    'label' => 'LBL_TALK_TIME',
+    'width' => '10%',
+    'name' => 'talk_time',
+  ),
+),
+    'listviewdefs' => array (
+  'TALK_TIME' => 
+  array (
+    'type' => 'datetimecombo',
+    'label' => 'LBL_TALK_TIME',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'talk_time',
+  ),
+  'TALK_PLACE' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_TALK_PLACE',
+    'width' => '10%',
+    'default' => true,
+    'name' => 'talk_place',
+  ),
+  'HOST_NAME_C' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'label' => 'LBL_HOST_NAME',
+    'width' => '10%',
+  ),
+  'HOST_POSITION' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_HOST_POSITION',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'HASVODIO' => 
+  array (
+    'type' => 'bool',
+    'default' => true,
+    'label' => 'LBL_HASVODIO',
+    'width' => '10%',
+  ),
+  'SUMMARY' => 
+  array (
+    'type' => 'text',
+    'studio' => 'visible',
+    'label' => 'LBL_SUMMARY',
+    'sortable' => false,
+    'width' => '30%',
+    'default' => true,
+  ),
+  'ATTITUDE' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_ATTITUDE',
+    'width' => '20%',
+    'default' => true,
+  ),
+),
+);

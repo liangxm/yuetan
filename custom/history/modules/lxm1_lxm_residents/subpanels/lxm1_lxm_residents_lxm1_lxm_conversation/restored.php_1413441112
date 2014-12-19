@@ -1,0 +1,52 @@
+<?php
+// created: 2014-10-16 14:31:47
+$layout_defs = array (
+  'lxm1_lxm_residents_lxm1_lxm_conversation_name' => 
+  array (
+    'type' => 'relate',
+    'link' => 'LBL_NAME',
+    'id' => 'LXM1_LXM_RESIDENTS_LXM1_LXM_CONVERSATIONLXM1_LXM_RESIDENTS_IDA',
+    'width' => '10%',
+    'default' => true,
+    'widget_class' => 'SubPanelDetailViewLink',
+    'target_module' => 'lxm1_lxm_residents',
+    'target_record_key' => 'lxm1_lxm_residents_lxm1_lxm_conversationlxm1_lxm_residents_ida',
+  ),
+  'host_name_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'vname' => 'LBL_HOST_NAME',
+    'width' => '10%',
+  ),
+  'talk_time' => 
+  array (
+    'type' => 'datetimecombo',
+    'vname' => 'LBL_TALK_TIME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'talk_place' => 
+  array (
+    'type' => 'varchar',
+    'vname' => 'LBL_TALK_PLACE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'attitude' => 
+  array (
+    'type' => 'varchar',
+    'vname' => 'LBL_ATTITUDE',
+    'width' => '20%',
+    'default' => true,
+  ),
+  'summary' => 
+  array (
+    'type' => 'text',
+    'studio' => 'visible',
+    'vname' => 'LBL_SUMMARY',
+    'sortable' => false,
+    'width' => '30%',
+    'default' => true,
+  ),
+);

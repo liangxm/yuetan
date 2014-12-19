@@ -1,0 +1,624 @@
+Mon Oct 20 21:54:00 2014 [29399][-none-][INFO] Found language file: en_us.lang.php
+Mon Oct 20 21:54:00 2014 [29399][-none-][INFO] Found extended language file: en_us.lang.ext.php
+Mon Oct 20 21:54:00 2014 [29399][-none-][INFO] Found custom language file: en_us.lang.php
+Mon Oct 20 21:54:00 2014 [29399][-none-][INFO] Found language file: zh_cn.lang.php
+Mon Oct 20 21:54:00 2014 [29399][-none-][INFO] Found extended language file: zh_cn.lang.ext.php
+Mon Oct 20 21:54:00 2014 [29399][-none-][INFO] Found custom language file: zh_cn.lang.php
+Mon Oct 20 21:54:00 2014 [29399][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Mon Oct 20 21:54:00 2014 [29399][-none-][INFO] Query Execution Time:0.00013494491577148
+Mon Oct 20 21:54:00 2014 [29399][-none-][INFO] Query:SELECT category, name, value FROM config
+Mon Oct 20 21:54:00 2014 [29399][-none-][INFO] Query Execution Time:8.9168548583984E-5
+Mon Oct 20 21:54:00 2014 [29399][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:00 2014 [29399][-none-][INFO] Query Execution Time:0.00016283988952637
+Mon Oct 20 21:54:00 2014 [29399][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:00 2014 [29399][-none-][INFO] Query Execution Time:0.00017118453979492
+Mon Oct 20 21:54:00 2014 [29399][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Mon Oct 20 21:54:00 2014 [29399][-none-][INFO] Query Execution Time:0.00020503997802734
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT id, first_name, last_name, user_name from users WHERE 1=1 ORDER BY last_name, first_name ASC
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:0.00017690658569336
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:0.00018692016601562
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT ea.email_address, ea.email_address_caps, ea.invalid_email, ea.opt_out, ea.date_created, ea.date_modified,
+                ear.id, ear.email_address_id, ear.bean_id, ear.bean_module, ear.primary_address, ear.reply_to_address, ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE ear.bean_module = 'Users'
+                AND ear.bean_id = '1'
+                AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:0.0001978874206543
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Found language file: en_us.lang.php
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Found language file: zh_cn.lang.php
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Found extended language file: en_us.lang.ext.php
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Found custom language file: en_us.lang.php
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Found extended language file: zh_cn.lang.ext.php
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Found custom language file: zh_cn.lang.php
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT count(*) as the_count FROM config WHERE category='info' AND name='sugar_version' AND value = '6.5.17'
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:0.00011301040649414
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'license'
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:0.00017189979553223
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:9.1791152954102E-5
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:0.00017404556274414
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'tracker'
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:8.2969665527344E-5
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:7.6055526733398E-5
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:0.00014209747314453
+Mon Oct 20 21:54:00 2014 [29399][1][WARN] Image 新增lxm1_lxm_residents.gif not found
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT item_id, item_summary, module_name, id FROM tracker WHERE id = (SELECT MAX(id) as id FROM tracker WHERE user_id = '1' AND deleted = 0 AND visible = 1) LIMIT 0,50
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:0.00011610984802246
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Tracker: retrieving 10 items
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'MySettings'
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:0.00010514259338379
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:4.7922134399414E-5
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:5.1021575927734E-5
+Mon Oct 20 21:54:00 2014 [29399][1][WARN] Image 新增lxm1_lxm_residents.gif not found
+Mon Oct 20 21:54:00 2014 [29399][1][WARN] Image 新增lxm1_lxm_residents1.gif not found
+Mon Oct 20 21:54:00 2014 [29399][1][WARN] Image dashboard.png not found
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT id, name FROM saved_search
+                  WHERE
+                    deleted = '0' AND
+                    assigned_user_id = '1' AND
+                    search_module =  'lxm1_lxm_residents'
+                  ORDER BY name
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:6.3896179199219E-5
+Mon Oct 20 21:54:00 2014 [29399][1][DEPRECATED] Using row number in fetchByAssoc is not portable and no longer supported. Please fix your code.
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query: SELECT  lxm1_lxm_residents.id , lxm1_lxm_residents.name , lxm1_lxm_residents.gender_c , lxm1_lxm_residents.id_number , lxm1_lxm_residents.phone , lxm1_lxm_residents.marital_situation , lxm1_lxm_residents.residences_address , lxm1_lxm_residents.work_unit , lxm1_lxm_residents.assigned_user_id  FROM lxm1_lxm_residents  where lxm1_lxm_residents.deleted=0 ORDER BY lxm1_lxm_residents.date_entered DESC LIMIT 0,11
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:5.8889389038086E-5
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query: SELECT count(*) c FROM lxm1_lxm_residents  where lxm1_lxm_residents.deleted=0
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:7.1048736572266E-5
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'system'
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:7.3909759521484E-5
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:6.6995620727539E-5
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:6.9141387939453E-5
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:SELECT meetings.id, name,reminder_time, description,location, status, parent_type, parent_id, date_start, assigned_user_id
+			FROM meetings LEFT JOIN meetings_users ON meetings.id = meetings_users.meeting_id
+			WHERE meetings_users.user_id ='1'
+				AND meetings_users.accept_status != 'decline'
+				AND meetings.reminder_time != -1
+				AND meetings_users.deleted != 1
+				AND meetings.status = 'Planned'
+			    AND date_start >= '2014-10-20 13:54:00'
+			    AND date_start <= '2014-10-20 14:54:00'
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:0.00033092498779297
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query:
+				SELECT calls.id, name, reminder_time, description, date_start, status, parent_type, parent_id
+				FROM calls LEFT JOIN calls_users ON calls.id = calls_users.call_id
+				WHERE calls_users.user_id ='1'
+				    AND calls_users.accept_status != 'decline'
+				    AND calls.reminder_time != -1
+					AND calls_users.deleted != 1
+					AND calls.status = 'Planned'
+				    AND date_start >= '2014-10-20 13:54:00'
+				    AND date_start <= '2014-10-20 14:54:00'
+Mon Oct 20 21:54:00 2014 [29399][1][INFO] Query Execution Time:0.00022602081298828
+Mon Oct 20 21:54:01 2014 [29399][-none-][INFO] Found language file: en_us.lang.php
+Mon Oct 20 21:54:01 2014 [29399][-none-][INFO] Found extended language file: en_us.lang.ext.php
+Mon Oct 20 21:54:01 2014 [29399][-none-][INFO] Found custom language file: en_us.lang.php
+Mon Oct 20 21:54:01 2014 [29399][-none-][INFO] Found language file: zh_cn.lang.php
+Mon Oct 20 21:54:01 2014 [29399][-none-][INFO] Found extended language file: zh_cn.lang.ext.php
+Mon Oct 20 21:54:01 2014 [29399][-none-][INFO] Found custom language file: zh_cn.lang.php
+Mon Oct 20 21:54:01 2014 [29399][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Mon Oct 20 21:54:01 2014 [29399][-none-][INFO] Query Execution Time:0.00012302398681641
+Mon Oct 20 21:54:01 2014 [29399][-none-][INFO] Query:SELECT category, name, value FROM config
+Mon Oct 20 21:54:01 2014 [29399][-none-][INFO] Query Execution Time:6.7949295043945E-5
+Mon Oct 20 21:54:01 2014 [29399][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:01 2014 [29399][-none-][INFO] Query Execution Time:0.00010013580322266
+Mon Oct 20 21:54:01 2014 [29399][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:01 2014 [29399][-none-][INFO] Query Execution Time:0.00010395050048828
+Mon Oct 20 21:54:01 2014 [29399][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Mon Oct 20 21:54:01 2014 [29399][-none-][INFO] Query Execution Time:0.00012493133544922
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT id, first_name, last_name, user_name from users WHERE 1=1 ORDER BY last_name, first_name ASC
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:0.00011014938354492
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:0.00010514259338379
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT ea.email_address, ea.email_address_caps, ea.invalid_email, ea.opt_out, ea.date_created, ea.date_modified,
+                ear.id, ear.email_address_id, ear.bean_id, ear.bean_module, ear.primary_address, ear.reply_to_address, ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE ear.bean_module = 'Users'
+                AND ear.bean_id = '1'
+                AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:0.00012803077697754
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Found language file: en_us.lang.php
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Found language file: zh_cn.lang.php
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Found extended language file: en_us.lang.ext.php
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Found custom language file: en_us.lang.php
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Found extended language file: zh_cn.lang.ext.php
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Found custom language file: zh_cn.lang.php
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT count(*) as the_count FROM config WHERE category='info' AND name='sugar_version' AND value = '6.5.17'
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:0.00011801719665527
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'license'
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:0.00010895729064941
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:0.00010299682617188
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:0.00010800361633301
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'tracker'
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:0.00011205673217773
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:6.0081481933594E-5
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:0.00010895729064941
+Mon Oct 20 21:54:01 2014 [29399][1][WARN] Image 新增lxm1_lxm_residents1.gif not found
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT item_id, item_summary, module_name, id FROM tracker WHERE id = (SELECT MAX(id) as id FROM tracker WHERE user_id = '1' AND deleted = 0 AND visible = 1) LIMIT 0,50
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:7.4148178100586E-5
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Tracker: retrieving 10 items
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'MySettings'
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:6.9141387939453E-5
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:6.413459777832E-5
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:6.7949295043945E-5
+Mon Oct 20 21:54:01 2014 [29399][1][WARN] Image 新增lxm1_lxm_residents.gif not found
+Mon Oct 20 21:54:01 2014 [29399][1][WARN] Image 新增lxm1_lxm_residents1.gif not found
+Mon Oct 20 21:54:01 2014 [29399][1][WARN] Image dashboard.png not found
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT id, name FROM saved_search
+                  WHERE
+                    deleted = '0' AND
+                    assigned_user_id = '1' AND
+                    search_module =  'lxm1_lxm_residents1'
+                  ORDER BY name
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:0.0002589225769043
+Mon Oct 20 21:54:01 2014 [29399][1][DEPRECATED] Using row number in fetchByAssoc is not portable and no longer supported. Please fix your code.
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT contents FROM user_preferences WHERE assigned_user_id='1' AND category = 'lxm1_lxm_residents12_LXM1_LXM_RESIDENTS1' AND deleted = 0
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:0.0002129077911377
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query: SELECT  lxm1_lxm_residents1.id , lxm1_lxm_residents1.name , lxm1_lxm_residents1.gender_c , lxm1_lxm_residents1.id_number , lxm1_lxm_residents1.phone , lxm1_lxm_residents1.marital_situation , lxm1_lxm_residents1.residences_address , lxm1_lxm_residents1.work_unit , lxm1_lxm_residents1.assigned_user_id  FROM lxm1_lxm_residents1  where lxm1_lxm_residents1.deleted=0 and lxm1_lxm_residents1.isdraft=1 ORDER BY lxm1_lxm_residents1.date_entered DESC LIMIT 0,11
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:7.5101852416992E-5
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'system'
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:7.3909759521484E-5
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:6.6041946411133E-5
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:6.9856643676758E-5
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:SELECT meetings.id, name,reminder_time, description,location, status, parent_type, parent_id, date_start, assigned_user_id
+			FROM meetings LEFT JOIN meetings_users ON meetings.id = meetings_users.meeting_id
+			WHERE meetings_users.user_id ='1'
+				AND meetings_users.accept_status != 'decline'
+				AND meetings.reminder_time != -1
+				AND meetings_users.deleted != 1
+				AND meetings.status = 'Planned'
+			    AND date_start >= '2014-10-20 13:54:01'
+			    AND date_start <= '2014-10-20 14:54:01'
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:0.00025701522827148
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query:
+				SELECT calls.id, name, reminder_time, description, date_start, status, parent_type, parent_id
+				FROM calls LEFT JOIN calls_users ON calls.id = calls_users.call_id
+				WHERE calls_users.user_id ='1'
+				    AND calls_users.accept_status != 'decline'
+				    AND calls.reminder_time != -1
+					AND calls_users.deleted != 1
+					AND calls.status = 'Planned'
+				    AND date_start >= '2014-10-20 13:54:01'
+				    AND date_start <= '2014-10-20 14:54:01'
+Mon Oct 20 21:54:01 2014 [29399][1][INFO] Query Execution Time:0.00022602081298828
+Mon Oct 20 21:54:02 2014 [29399][-none-][INFO] Found language file: en_us.lang.php
+Mon Oct 20 21:54:02 2014 [29399][-none-][INFO] Found extended language file: en_us.lang.ext.php
+Mon Oct 20 21:54:02 2014 [29399][-none-][INFO] Found custom language file: en_us.lang.php
+Mon Oct 20 21:54:02 2014 [29399][-none-][INFO] Found language file: zh_cn.lang.php
+Mon Oct 20 21:54:02 2014 [29399][-none-][INFO] Found extended language file: zh_cn.lang.ext.php
+Mon Oct 20 21:54:02 2014 [29399][-none-][INFO] Found custom language file: zh_cn.lang.php
+Mon Oct 20 21:54:02 2014 [29399][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Mon Oct 20 21:54:02 2014 [29399][-none-][INFO] Query Execution Time:7.6770782470703E-5
+Mon Oct 20 21:54:02 2014 [29399][-none-][INFO] Query:SELECT category, name, value FROM config
+Mon Oct 20 21:54:02 2014 [29399][-none-][INFO] Query Execution Time:3.6001205444336E-5
+Mon Oct 20 21:54:02 2014 [29399][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:02 2014 [29399][-none-][INFO] Query Execution Time:2.8848648071289E-5
+Mon Oct 20 21:54:02 2014 [29399][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:02 2014 [29399][-none-][INFO] Query Execution Time:0.00011205673217773
+Mon Oct 20 21:54:02 2014 [29399][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Mon Oct 20 21:54:02 2014 [29399][-none-][INFO] Query Execution Time:0.0001220703125
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT id, first_name, last_name, user_name from users WHERE 1=1 ORDER BY last_name, first_name ASC
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:0.00010895729064941
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:0.00010204315185547
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT ea.email_address, ea.email_address_caps, ea.invalid_email, ea.opt_out, ea.date_created, ea.date_modified,
+                ear.id, ear.email_address_id, ear.bean_id, ear.bean_module, ear.primary_address, ear.reply_to_address, ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE ear.bean_module = 'Users'
+                AND ear.bean_id = '1'
+                AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:0.00012993812561035
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Found language file: en_us.lang.php
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Found language file: zh_cn.lang.php
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Found extended language file: en_us.lang.ext.php
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Found custom language file: en_us.lang.php
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Found extended language file: zh_cn.lang.ext.php
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Found custom language file: zh_cn.lang.php
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT count(*) as the_count FROM config WHERE category='info' AND name='sugar_version' AND value = '6.5.17'
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:9.8943710327148E-5
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'license'
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:9.4175338745117E-5
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:6.413459777832E-5
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:9.3936920166016E-5
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'tracker'
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:0.00011110305786133
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:8.8930130004883E-5
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:6.5803527832031E-5
+Mon Oct 20 21:54:02 2014 [29399][1][WARN] Image 新增lxm1_lxm_residents.gif not found
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT item_id, item_summary, module_name, id FROM tracker WHERE id = (SELECT MAX(id) as id FROM tracker WHERE user_id = '1' AND deleted = 0 AND visible = 1) LIMIT 0,50
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:8.4877014160156E-5
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Tracker: retrieving 10 items
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'MySettings'
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:6.6995620727539E-5
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:6.5088272094727E-5
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:6.6995620727539E-5
+Mon Oct 20 21:54:02 2014 [29399][1][WARN] Image 新增lxm1_lxm_residents.gif not found
+Mon Oct 20 21:54:02 2014 [29399][1][WARN] Image 新增lxm1_lxm_residents1.gif not found
+Mon Oct 20 21:54:02 2014 [29399][1][WARN] Image dashboard.png not found
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT id, name FROM saved_search
+                  WHERE
+                    deleted = '0' AND
+                    assigned_user_id = '1' AND
+                    search_module =  'lxm1_lxm_residents'
+                  ORDER BY name
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:7.7962875366211E-5
+Mon Oct 20 21:54:02 2014 [29399][1][DEPRECATED] Using row number in fetchByAssoc is not portable and no longer supported. Please fix your code.
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query: SELECT  lxm1_lxm_residents.id , lxm1_lxm_residents.name , lxm1_lxm_residents.gender_c , lxm1_lxm_residents.id_number , lxm1_lxm_residents.phone , lxm1_lxm_residents.marital_situation , lxm1_lxm_residents.residences_address , lxm1_lxm_residents.work_unit , lxm1_lxm_residents.assigned_user_id  FROM lxm1_lxm_residents  where lxm1_lxm_residents.deleted=0 ORDER BY lxm1_lxm_residents.date_entered DESC LIMIT 0,11
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:7.5817108154297E-5
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query: SELECT count(*) c FROM lxm1_lxm_residents  where lxm1_lxm_residents.deleted=0
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:6.6995620727539E-5
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'system'
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:7.1048736572266E-5
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:7.0095062255859E-5
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:6.9141387939453E-5
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:SELECT meetings.id, name,reminder_time, description,location, status, parent_type, parent_id, date_start, assigned_user_id
+			FROM meetings LEFT JOIN meetings_users ON meetings.id = meetings_users.meeting_id
+			WHERE meetings_users.user_id ='1'
+				AND meetings_users.accept_status != 'decline'
+				AND meetings.reminder_time != -1
+				AND meetings_users.deleted != 1
+				AND meetings.status = 'Planned'
+			    AND date_start >= '2014-10-20 13:54:02'
+			    AND date_start <= '2014-10-20 14:54:02'
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:0.00032806396484375
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query:
+				SELECT calls.id, name, reminder_time, description, date_start, status, parent_type, parent_id
+				FROM calls LEFT JOIN calls_users ON calls.id = calls_users.call_id
+				WHERE calls_users.user_id ='1'
+				    AND calls_users.accept_status != 'decline'
+				    AND calls.reminder_time != -1
+					AND calls_users.deleted != 1
+					AND calls.status = 'Planned'
+				    AND date_start >= '2014-10-20 13:54:02'
+				    AND date_start <= '2014-10-20 14:54:02'
+Mon Oct 20 21:54:02 2014 [29399][1][INFO] Query Execution Time:0.00023388862609863
+Mon Oct 20 21:54:06 2014 [29399][-none-][INFO] Found language file: en_us.lang.php
+Mon Oct 20 21:54:06 2014 [29399][-none-][INFO] Found extended language file: en_us.lang.ext.php
+Mon Oct 20 21:54:06 2014 [29399][-none-][INFO] Found custom language file: en_us.lang.php
+Mon Oct 20 21:54:06 2014 [29399][-none-][INFO] Found language file: zh_cn.lang.php
+Mon Oct 20 21:54:06 2014 [29399][-none-][INFO] Found extended language file: zh_cn.lang.ext.php
+Mon Oct 20 21:54:06 2014 [29399][-none-][INFO] Found custom language file: zh_cn.lang.php
+Mon Oct 20 21:54:06 2014 [29399][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Mon Oct 20 21:54:06 2014 [29399][-none-][INFO] Query Execution Time:0.00013303756713867
+Mon Oct 20 21:54:06 2014 [29399][-none-][INFO] Query:SELECT category, name, value FROM config
+Mon Oct 20 21:54:06 2014 [29399][-none-][INFO] Query Execution Time:0.00012111663818359
+Mon Oct 20 21:54:06 2014 [29399][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:06 2014 [29399][-none-][INFO] Query Execution Time:0.00010418891906738
+Mon Oct 20 21:54:06 2014 [29399][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:06 2014 [29399][-none-][INFO] Query Execution Time:0.00018095970153809
+Mon Oct 20 21:54:06 2014 [29399][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Mon Oct 20 21:54:06 2014 [29399][-none-][INFO] Query Execution Time:0.00014901161193848
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT id, first_name, last_name, user_name from users WHERE 1=1 ORDER BY last_name, first_name ASC
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:0.0001370906829834
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:0.00012707710266113
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT ea.email_address, ea.email_address_caps, ea.invalid_email, ea.opt_out, ea.date_created, ea.date_modified,
+                ear.id, ear.email_address_id, ear.bean_id, ear.bean_module, ear.primary_address, ear.reply_to_address, ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE ear.bean_module = 'Users'
+                AND ear.bean_id = '1'
+                AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:0.00013494491577148
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Found language file: en_us.lang.php
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Found language file: zh_cn.lang.php
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Found extended language file: en_us.lang.ext.php
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Found custom language file: en_us.lang.php
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Found extended language file: zh_cn.lang.ext.php
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Found custom language file: zh_cn.lang.php
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT count(*) as the_count FROM config WHERE category='info' AND name='sugar_version' AND value = '6.5.17'
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:9.8943710327148E-5
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'license'
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:8.9883804321289E-5
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:6.7949295043945E-5
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:6.9141387939453E-5
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'tracker'
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:7.0095062255859E-5
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:6.7234039306641E-5
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:7.2956085205078E-5
+Mon Oct 20 21:54:06 2014 [29399][1][WARN] Image 新增lxm1_lxm_residents1.gif not found
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT item_id, item_summary, module_name, id FROM tracker WHERE id = (SELECT MAX(id) as id FROM tracker WHERE user_id = '1' AND deleted = 0 AND visible = 1) LIMIT 0,50
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:7.5101852416992E-5
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Tracker: retrieving 10 items
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'MySettings'
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:6.9856643676758E-5
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:6.6995620727539E-5
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:6.9856643676758E-5
+Mon Oct 20 21:54:06 2014 [29399][1][WARN] Image 新增lxm1_lxm_residents.gif not found
+Mon Oct 20 21:54:06 2014 [29399][1][WARN] Image 新增lxm1_lxm_residents1.gif not found
+Mon Oct 20 21:54:06 2014 [29399][1][WARN] Image dashboard.png not found
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT id, name FROM saved_search
+                  WHERE
+                    deleted = '0' AND
+                    assigned_user_id = '1' AND
+                    search_module =  'lxm1_lxm_residents1'
+                  ORDER BY name
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:0.00010013580322266
+Mon Oct 20 21:54:06 2014 [29399][1][DEPRECATED] Using row number in fetchByAssoc is not portable and no longer supported. Please fix your code.
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query: SELECT  lxm1_lxm_residents1.id , lxm1_lxm_residents1.name , lxm1_lxm_residents1.gender_c , lxm1_lxm_residents1.id_number , lxm1_lxm_residents1.phone , lxm1_lxm_residents1.marital_situation , lxm1_lxm_residents1.residences_address , lxm1_lxm_residents1.work_unit , lxm1_lxm_residents1.assigned_user_id  FROM lxm1_lxm_residents1  where lxm1_lxm_residents1.deleted=0 and lxm1_lxm_residents1.isdraft=1 ORDER BY lxm1_lxm_residents1.date_entered DESC LIMIT 0,11
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:0.00012111663818359
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'system'
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:0.00011801719665527
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:0.00012993812561035
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:0.00013184547424316
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:SELECT meetings.id, name,reminder_time, description,location, status, parent_type, parent_id, date_start, assigned_user_id
+			FROM meetings LEFT JOIN meetings_users ON meetings.id = meetings_users.meeting_id
+			WHERE meetings_users.user_id ='1'
+				AND meetings_users.accept_status != 'decline'
+				AND meetings.reminder_time != -1
+				AND meetings_users.deleted != 1
+				AND meetings.status = 'Planned'
+			    AND date_start >= '2014-10-20 13:54:06'
+			    AND date_start <= '2014-10-20 14:54:06'
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:0.00053691864013672
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query:
+				SELECT calls.id, name, reminder_time, description, date_start, status, parent_type, parent_id
+				FROM calls LEFT JOIN calls_users ON calls.id = calls_users.call_id
+				WHERE calls_users.user_id ='1'
+				    AND calls_users.accept_status != 'decline'
+				    AND calls.reminder_time != -1
+					AND calls_users.deleted != 1
+					AND calls.status = 'Planned'
+				    AND date_start >= '2014-10-20 13:54:06'
+				    AND date_start <= '2014-10-20 14:54:06'
+Mon Oct 20 21:54:06 2014 [29399][1][INFO] Query Execution Time:0.00041890144348145
+Mon Oct 20 21:54:09 2014 [29399][-none-][INFO] Found language file: en_us.lang.php
+Mon Oct 20 21:54:09 2014 [29399][-none-][INFO] Found extended language file: en_us.lang.ext.php
+Mon Oct 20 21:54:09 2014 [29399][-none-][INFO] Found custom language file: en_us.lang.php
+Mon Oct 20 21:54:09 2014 [29399][-none-][INFO] Found language file: zh_cn.lang.php
+Mon Oct 20 21:54:09 2014 [29399][-none-][INFO] Found extended language file: zh_cn.lang.ext.php
+Mon Oct 20 21:54:09 2014 [29399][-none-][INFO] Found custom language file: zh_cn.lang.php
+Mon Oct 20 21:54:09 2014 [29399][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Mon Oct 20 21:54:09 2014 [29399][-none-][INFO] Query Execution Time:8.702278137207E-5
+Mon Oct 20 21:54:09 2014 [29399][-none-][INFO] Query:SELECT category, name, value FROM config
+Mon Oct 20 21:54:09 2014 [29399][-none-][INFO] Query Execution Time:7.4148178100586E-5
+Mon Oct 20 21:54:09 2014 [29399][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:09 2014 [29399][-none-][INFO] Query Execution Time:9.1075897216797E-5
+Mon Oct 20 21:54:09 2014 [29399][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:09 2014 [29399][-none-][INFO] Query Execution Time:9.5844268798828E-5
+Mon Oct 20 21:54:09 2014 [29399][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Mon Oct 20 21:54:09 2014 [29399][-none-][INFO] Query Execution Time:0.00013589859008789
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query:SELECT id, first_name, last_name, user_name from users WHERE 1=1 ORDER BY last_name, first_name ASC
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query Execution Time:0.00011801719665527
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query Execution Time:9.2983245849609E-5
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query:SELECT ea.email_address, ea.email_address_caps, ea.invalid_email, ea.opt_out, ea.date_created, ea.date_modified,
+                ear.id, ear.email_address_id, ear.bean_id, ear.bean_module, ear.primary_address, ear.reply_to_address, ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE ear.bean_module = 'Users'
+                AND ear.bean_id = '1'
+                AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query Execution Time:8.2969665527344E-5
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Found language file: en_us.lang.php
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Found language file: zh_cn.lang.php
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Found extended language file: en_us.lang.ext.php
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Found custom language file: en_us.lang.php
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Found extended language file: zh_cn.lang.ext.php
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Found custom language file: zh_cn.lang.php
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query:SELECT count(*) as the_count FROM config WHERE category='info' AND name='sugar_version' AND value = '6.5.17'
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query Execution Time:0.00011801719665527
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'license'
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query Execution Time:6.8902969360352E-5
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query Execution Time:6.3896179199219E-5
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query Execution Time:6.7949295043945E-5
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'tracker'
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query Execution Time:7.1048736572266E-5
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query Execution Time:6.5088272094727E-5
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query Execution Time:6.7949295043945E-5
+Mon Oct 20 21:54:09 2014 [29399][1][WARN] Image 新增lxm1_lxm_residents1.gif not found
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query:SELECT item_id, item_summary, module_name, id FROM tracker WHERE id = (SELECT MAX(id) as id FROM tracker WHERE user_id = '1' AND deleted = 0 AND visible = 1) LIMIT 0,50
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query Execution Time:7.2002410888672E-5
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Tracker: retrieving 10 items
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'MySettings'
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query Execution Time:7.0095062255859E-5
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query Execution Time:6.5088272094727E-5
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query Execution Time:6.8187713623047E-5
+Mon Oct 20 21:54:09 2014 [29399][1][WARN] Image 新增lxm1_lxm_residents.gif not found
+Mon Oct 20 21:54:09 2014 [29399][1][WARN] Image 新增lxm1_lxm_residents1.gif not found
+Mon Oct 20 21:54:09 2014 [29399][1][WARN] Image dashboard.png not found
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query:SELECT meetings.id, name,reminder_time, description,location, status, parent_type, parent_id, date_start, assigned_user_id
+			FROM meetings LEFT JOIN meetings_users ON meetings.id = meetings_users.meeting_id
+			WHERE meetings_users.user_id ='1'
+				AND meetings_users.accept_status != 'decline'
+				AND meetings.reminder_time != -1
+				AND meetings_users.deleted != 1
+				AND meetings.status = 'Planned'
+			    AND date_start >= '2014-10-20 13:54:09'
+			    AND date_start <= '2014-10-20 14:54:09'
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query Execution Time:0.0003359317779541
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query:
+				SELECT calls.id, name, reminder_time, description, date_start, status, parent_type, parent_id
+				FROM calls LEFT JOIN calls_users ON calls.id = calls_users.call_id
+				WHERE calls_users.user_id ='1'
+				    AND calls_users.accept_status != 'decline'
+				    AND calls.reminder_time != -1
+					AND calls_users.deleted != 1
+					AND calls.status = 'Planned'
+				    AND date_start >= '2014-10-20 13:54:09'
+				    AND date_start <= '2014-10-20 14:54:09'
+Mon Oct 20 21:54:09 2014 [29399][1][INFO] Query Execution Time:0.00022697448730469
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Found language file: en_us.lang.php
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Found extended language file: en_us.lang.ext.php
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Found custom language file: en_us.lang.php
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Found language file: zh_cn.lang.php
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Found extended language file: zh_cn.lang.ext.php
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Found custom language file: zh_cn.lang.php
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query Execution Time:0.00010418891906738
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query:SELECT category, name, value FROM config
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query Execution Time:0.00012087821960449
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query Execution Time:0.00010800361633301
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query Execution Time:0.00010585784912109
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query Execution Time:0.0001380443572998
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT id, first_name, last_name, user_name from users WHERE 1=1 ORDER BY last_name, first_name ASC
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00011396408081055
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00010800361633301
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT ea.email_address, ea.email_address_caps, ea.invalid_email, ea.opt_out, ea.date_created, ea.date_modified,
+                ear.id, ear.email_address_id, ear.bean_id, ear.bean_module, ear.primary_address, ear.reply_to_address, ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE ear.bean_module = 'Users'
+                AND ear.bean_id = '1'
+                AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00013303756713867
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Found language file: en_us.lang.php
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Found language file: zh_cn.lang.php
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Found extended language file: en_us.lang.ext.php
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Found custom language file: en_us.lang.php
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Found extended language file: zh_cn.lang.ext.php
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Found custom language file: zh_cn.lang.php
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT count(*) as the_count FROM config WHERE category='info' AND name='sugar_version' AND value = '6.5.17'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00010800361633301
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'license'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00010895729064941
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:9.1075897216797E-5
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00010395050048828
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT count(*) AS the_count FROM config WHERE category = 'system' AND name = 'name'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00013494491577148
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:UPDATE config SET value = '徐家汇街道' WHERE category = 'system' AND name = 'name'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.065658807754517
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT count(*) AS the_count FROM config WHERE category = 'proxy' AND name = 'on'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00012922286987305
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:UPDATE config SET value = '0' WHERE category = 'proxy' AND name = 'on'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.041341066360474
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT count(*) AS the_count FROM config WHERE category = 'proxy' AND name = 'host'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00012993812561035
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:UPDATE config SET value = '' WHERE category = 'proxy' AND name = 'host'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.041385173797607
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT count(*) AS the_count FROM config WHERE category = 'proxy' AND name = 'port'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:8.1062316894531E-5
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:UPDATE config SET value = '' WHERE category = 'proxy' AND name = 'port'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.041483163833618
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT count(*) AS the_count FROM config WHERE category = 'proxy' AND name = 'auth'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00013113021850586
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:UPDATE config SET value = '0' WHERE category = 'proxy' AND name = 'auth'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.041408061981201
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT count(*) AS the_count FROM config WHERE category = 'proxy' AND name = 'username'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00012803077697754
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:UPDATE config SET value = '' WHERE category = 'proxy' AND name = 'username'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.041384935379028
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT count(*) AS the_count FROM config WHERE category = 'proxy' AND name = 'password'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00013017654418945
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:UPDATE config SET value = '' WHERE category = 'proxy' AND name = 'password'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.039831161499023
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT count(*) AS the_count FROM config WHERE category = 'system' AND name = 'skypeout_on'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00012803077697754
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:UPDATE config SET value = '0' WHERE category = 'system' AND name = 'skypeout_on'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.041418075561523
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT category, name, value FROM config
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00013899803161621
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00012803077697754
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00013303756713867
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Found language file: en_us.lang.php
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Found extended language file: en_us.lang.ext.php
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Found custom language file: en_us.lang.php
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Found language file: zh_cn.lang.php
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Found extended language file: zh_cn.lang.ext.php
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Found custom language file: zh_cn.lang.php
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query:SELECT id, name, symbol, conversion_rate FROM currencies WHERE status = 'Active' and deleted = 0
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query Execution Time:0.00012016296386719
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query:SELECT category, name, value FROM config
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query Execution Time:0.00011515617370605
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query Execution Time:0.00010299682617188
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query Execution Time:0.0001068115234375
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query:SELECT users.* FROM users  WHERE users.id = '1' AND users.deleted=0 LIMIT 0,1
+Mon Oct 20 21:54:34 2014 [29511][-none-][INFO] Query Execution Time:0.00012302398681641
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT id, first_name, last_name, user_name from users WHERE 1=1 ORDER BY last_name, first_name ASC
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:0.00010919570922852
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT u1.first_name, u1.last_name from users  u1, users  u2 where u1.id = u2.reports_to_id AND u2.id = '1' and u1.deleted=0
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:6.9141387939453E-5
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT ea.email_address, ea.email_address_caps, ea.invalid_email, ea.opt_out, ea.date_created, ea.date_modified,
+                ear.id, ear.email_address_id, ear.bean_id, ear.bean_module, ear.primary_address, ear.reply_to_address, ear.deleted
+                FROM email_addresses ea LEFT JOIN email_addr_bean_rel ear ON ea.id = ear.email_address_id
+                WHERE ear.bean_module = 'Users'
+                AND ear.bean_id = '1'
+                AND ear.deleted = 0
+                ORDER BY ear.reply_to_address, ear.primary_address DESC
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:8.5115432739258E-5
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Found language file: en_us.lang.php
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Found language file: zh_cn.lang.php
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Found extended language file: en_us.lang.ext.php
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Found custom language file: en_us.lang.php
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Found extended language file: zh_cn.lang.ext.php
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Found custom language file: zh_cn.lang.php
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT count(*) as the_count FROM config WHERE category='info' AND name='sugar_version' AND value = '6.5.17'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:8.5115432739258E-5
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'license'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:6.8902969360352E-5
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:6.6041946411133E-5
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:6.8902969360352E-5
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'tracker'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:7.0095062255859E-5
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:6.4849853515625E-5
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:6.8902969360352E-5
+Mon Oct 20 21:54:34 2014 [29511][1][WARN] Image icon_Administration_32.png not found
+Mon Oct 20 21:54:34 2014 [29511][1][WARN] Image icon_Administration_32.png not found
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT item_id, item_summary, module_name, id FROM tracker WHERE id = (SELECT MAX(id) as id FROM tracker WHERE user_id = '1' AND deleted = 0 AND visible = 1) LIMIT 0,50
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:7.6055526733398E-5
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Tracker: retrieving 10 items
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT category, name, value FROM config WHERE category = 'MySettings'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:6.9856643676758E-5
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT id FROM outbound_email WHERE type = 'system'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:6.4849853515625E-5
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query:SELECT * FROM outbound_email WHERE id = '863e0592-bbff-cf54-5953-5426895ad8f3'
+Mon Oct 20 21:54:34 2014 [29511][1][INFO] Query Execution Time:6.7949295043945E-5
+Mon Oct 20 21:54:34 2014 [29511][1][WARN] Image 新增lxm1_lxm_residents.gif not found
+Mon Oct 20 21:54:34 2014 [29511][1][WARN] Image 新增lxm1_lxm_residents1.gif not found
+Mon Oct 20 21:54:34 2014 [29511][1][WARN] Image dashboard.png not found
+Mon Oct 20 21:54:34 2014 [29511][1][WARN] Image icon_系统管理_32.png not found
+Mon Oct 20 21:54:34 2014 [29511][1][WARN] Image icon_系统管理_32.png not found

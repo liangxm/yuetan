@@ -1,0 +1,76 @@
+<?php
+$module_name = 'lxm1_lxm_residents';
+$viewdefs [$module_name] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'isdraft',
+            'label' => 'LBL_ISDRAFT',
+          ),
+        ),
+      ),
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 'name',
+          1 => 
+          array (
+            'name' => 'gender_c',
+            'studio' => 'visible',
+            'label' => 'LBL_GENDER_C',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'id_number',
+            'label' => 'LBL_ID_NUMBER',
+          ),
+          1 => '',
+        ),
+      ),
+    ),
+  ),
+);
+?>

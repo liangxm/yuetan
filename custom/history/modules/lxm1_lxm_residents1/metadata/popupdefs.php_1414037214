@@ -1,0 +1,25 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'lxm1_lxm_residents1',
+    'varName' => 'lxm1_lxm_residents1',
+    'orderBy' => 'lxm1_lxm_residents1.name',
+    'whereClauses' => array (
+  'full_name' => 'lxm1_lxm_residents1.full_name',
+),
+    'searchInputs' => array (
+  2 => 'full_name',
+),
+    'searchdefs' => array (
+  'full_name' => 
+  array (
+    'type' => 'name',
+    'studio' => 
+    array (
+      'formula' => false,
+    ),
+    'label' => 'LBL_NAME',
+    'width' => '10%',
+    'name' => 'full_name',
+  ),
+),
+);

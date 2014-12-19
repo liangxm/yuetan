@@ -1,0 +1,37 @@
+<?php
+$popupMeta = array (
+    'moduleMain' => 'lxm1_lxm_conversation',
+    'varName' => 'lxm1_lxm_conversation',
+    'orderBy' => 'lxm1_lxm_conversation.name',
+    'whereClauses' => array (
+  'talk_time' => 'lxm1_lxm_conversation.talk_time',
+),
+    'searchInputs' => array (
+  4 => 'talk_time',
+),
+    'searchdefs' => array (
+  'talk_time' => 
+  array (
+    'type' => 'datetimecombo',
+    'label' => 'LBL_TALK_TIME',
+    'width' => '10%',
+    'name' => 'talk_time',
+  ),
+),
+    'listviewdefs' => array (
+  'TALK_TIME' => 
+  array (
+    'type' => 'datetimecombo',
+    'label' => 'LBL_TALK_TIME',
+    'width' => '20%',
+    'default' => true,
+  ),
+  'TALK_PLACE' => 
+  array (
+    'type' => 'varchar',
+    'label' => 'LBL_TALK_PLACE',
+    'width' => '20%',
+    'default' => true,
+  ),
+),
+);

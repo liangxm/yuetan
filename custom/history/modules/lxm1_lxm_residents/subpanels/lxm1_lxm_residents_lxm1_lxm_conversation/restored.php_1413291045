@@ -1,0 +1,48 @@
+<?php
+// created: 2014-10-14 20:50:40
+$layout_defs = array (
+  'name' => 
+  array (
+    'vname' => 'LBL_NAME',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'host_name_c' => 
+  array (
+    'type' => 'varchar',
+    'default' => true,
+    'vname' => 'LBL_HOST_NAME',
+    'width' => '10%',
+  ),
+  'talk_time' => 
+  array (
+    'type' => 'datetimecombo',
+    'vname' => 'LBL_TALK_TIME',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'talk_place' => 
+  array (
+    'type' => 'varchar',
+    'vname' => 'LBL_TALK_PLACE',
+    'width' => '10%',
+    'default' => true,
+  ),
+  'attitude' => 
+  array (
+    'type' => 'varchar',
+    'vname' => 'LBL_ATTITUDE',
+    'width' => '20%',
+    'default' => true,
+  ),
+  'summary' => 
+  array (
+    'type' => 'text',
+    'studio' => 'visible',
+    'vname' => 'LBL_SUMMARY',
+    'sortable' => false,
+    'width' => '30%',
+    'default' => true,
+  ),
+);

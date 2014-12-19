@@ -1,0 +1,33 @@
+<?php
+// created: 2014-10-07 09:57:50
+$layout_defs = array (
+  'document_name' => 
+  array (
+    'name' => 'document_name',
+    'vname' => 'LBL_LIST_DOCUMENT_NAME',
+    'widget_class' => 'SubPanelDetailViewLink',
+    'width' => '45%',
+    'default' => true,
+  ),
+  'object_image' => 
+  array (
+    'widget_class' => 'SubPanelIcon',
+    'width' => '2%',
+    'image2' => 'attachment',
+    'image2_url_field' => 
+    array (
+      'id_field' => 'selected_revision_id',
+      'filename_field' => 'selected_revision_filename',
+    ),
+    'attachment_image_only' => true,
+    'default' => true,
+  ),
+  'description' => 
+  array (
+    'type' => 'text',
+    'vname' => 'LBL_DESCRIPTION',
+    'sortable' => false,
+    'width' => '10%',
+    'default' => true,
+  ),
+);

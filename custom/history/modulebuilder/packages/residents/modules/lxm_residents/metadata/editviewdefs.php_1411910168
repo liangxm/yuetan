@@ -1,0 +1,147 @@
+<?php
+$module_name = 'lxm1_lxm_residents';
+$viewdefs [$module_name] = 
+array (
+  'EditView' => 
+  array (
+    'templateMeta' => 
+    array (
+      'maxColumns' => '2',
+      'widths' => 
+      array (
+        0 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+        1 => 
+        array (
+          'label' => '10',
+          'field' => '30',
+        ),
+      ),
+      'useTabs' => false,
+      'tabDefs' => 
+      array (
+        'LBL_EDITVIEW_PANEL1' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'DEFAULT' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+        'LBL_EDITVIEW_PANEL2' => 
+        array (
+          'newTab' => false,
+          'panelDefault' => 'expanded',
+        ),
+      ),
+    ),
+    'panels' => 
+    array (
+      'lbl_editview_panel1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            'name' => 'isdraft',
+            'label' => 'LBL_ISDRAFT',
+          ),
+        ),
+      ),
+      'default' => 
+      array (
+        0 => 
+        array (
+          0 => 'name',
+          1 => 
+          array (
+            'name' => 'gender_c',
+            'studio' => 'visible',
+            'label' => 'LBL_GENDER_C',
+          ),
+        ),
+        1 => 
+        array (
+          0 => 
+          array (
+            'name' => 'id_number',
+            'label' => 'LBL_ID_NUMBER',
+          ),
+          1 => 
+          array (
+            'name' => 'marital_situation',
+            'studio' => 'visible',
+            'label' => 'LBL_MARITAL_SITUATION',
+          ),
+        ),
+        2 => 
+        array (
+          0 => 
+          array (
+            'name' => 'phone',
+            'label' => 'LBL_PHONE',
+          ),
+          1 => 
+          array (
+            'name' => 'persent_address',
+            'label' => 'LBL_PERSENT_ADDRESS',
+          ),
+        ),
+        3 => 
+        array (
+          0 => 
+          array (
+            'name' => 'residences_address',
+            'label' => 'LBL_RESIDENCES_ADDRESS',
+          ),
+          1 => 
+          array (
+            'name' => 'work_unit',
+            'label' => 'LBL_WORK_UNIT',
+          ),
+        ),
+        4 => 
+        array (
+          0 => 
+          array (
+            'name' => 'personal_details',
+            'studio' => 'visible',
+            'label' => 'LBL_PERSONAL_DETAILS',
+          ),
+        ),
+        5 => 
+        array (
+          0 => 
+          array (
+            'name' => 'disease_situation',
+            'studio' => 'visible',
+            'label' => 'LBL_DISEASE_SITUATION',
+          ),
+        ),
+        6 => 
+        array (
+          0 => 
+          array (
+            'name' => 'pocketbook',
+            'studio' => 'visible',
+            'label' => 'LBL_POCKETBOOK',
+          ),
+        ),
+      ),
+      'lbl_editview_panel2' => 
+      array (
+        0 => 
+        array (
+          0 => '',
+          1 => '',
+        ),
+      ),
+    ),
+  ),
+);
+?>

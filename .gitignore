@@ -1,0 +1,29 @@
+# ignore all of cache files
+cache/csv/*
+cache/dashlets/*
+cache/dynamic_fields/*
+cache/feeds/*
+cache/import/*
+cache/include/*
+cache/jsLanguage/*
+cache/modules/*
+!cache/modules/emails
+!cache/modules/Emails
+cache/pdf/*
+cache/smarty/cache/*
+cache/smarty/templates_c/*
+cache/themes/*
+cache/xml/*
+cache/upgrades/temp/*
+
+# ignore some files and directories from the custom directory.
+custom/history/*
+custom/modulebuilder/*
+custom/working/*
+custom/application/Ext/*
+
+# The silent upgrade scripts aren't needed
+silentUpgrade*.php
+
+# Logs files can safely be ignored.
+*.log
