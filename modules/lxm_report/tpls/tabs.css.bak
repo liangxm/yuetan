@@ -1,0 +1,58 @@
+﻿#Tab1 .Menubox ul{ list-style:none;}
+/*选项卡1*/ 
+#Tab1{ 
+width:99%; 
+margin:0px; 
+padding:0px; 
+margin:0 auto;} 
+/*选项卡2*/ 
+#Tab2{
+width:576px; 
+margin:0px; 
+padding:0px; 
+margin:0 auto;}
+/*菜单class*/ 
+.Menubox { 
+width:100%; 
+background:url(http://www.jb51.net/upload/small/20079299441652.gif); 
+height:28px; 
+line-height:28px; 
+}
+.Menubox ul{ 
+margin:0px; 
+padding:0px; 
+}
+.Menubox li{ 
+float:left; 
+display:block; 
+cursor:pointer; 
+width:110px; 
+text-align:center; 
+color:#949694; 
+font-weight:bold; 
+} 
+.Menubox li.hover{ 
+padding:0px; 
+background:#fff; 
+width:116px; 
+border-left:1px solid #cbdae6; 
+border-top:1px solid #cbdae6; 
+border-right:1px solid #cbdae6; 
+background:url(http://www.jb51.net/upload/small/200792994426548.gif); 
+color:#739242; 
+font-weight:bold; 
+height:27px; 
+line-height:27px; 
+} 
+.Contentbox{ 
+clear:both; 
+margin-top:0px; 
+border:1px solid #cbdae6; 
+border-top:none; 
+height:181px; 
+text-align:left; 
+padding-top:8px; 
+}
+.Contentbox .search {
+	border:1px solid #cbdae6;
+}

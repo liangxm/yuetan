@@ -3,71 +3,39 @@ if(!defined('sugarEntry') || !sugarEntry) die('Not A Valid Entry Point');
 require_once('include/MVC/View/views/view.list.php');
 class lxm_reportViewList extends ViewList
 {
+	var $lxm_report_warning;
+	var $company_logo_path;
+	var $conpany_tagline;
 	
 	function lxm_reportViewList(){
 		parent::ViewList();
 	}
 
-	function listViewProcess(){
-        $this->processSearchForm();
-        $this->lv->searchColumns = $this->searchForm->searchColumns;
+	function preDisplay() {
+		//$this->lxm_report_warning = 'Our Contacts database is not for personal. Please do not use it for things not strictly related to company business. You know who you are!';
+		//$this->company_logo_path = SugarThemeRegistry::current()->getImage('company_logo','align="absmiddle" alt="Schedule Call" border="0"');
+		//$this->company_tagline = 'Serving the biggest and brightest stars in Hollywood!';
+		//parent::preDisplay();
 
-        if(!$this->headers)
-            return;
-        if(empty($_REQUEST['search_form_only']) || $_REQUEST['search_form_only'] == false){
-            $this->lv->setup($this->seed, 'modules/lxm_report/tpls/ListView.tpl', $this->where, $this->params);
-            $savedSearchName = empty($_REQUEST['saved_search_select_name']) ? '' : (' - ' . $_REQUEST['saved_search_select_name']);
-            echo get_form_header($GLOBALS['mod_strings']['LBL_LIST_FORM_TITLE'].$savedSearchName, '', false);
-			echo $this->lv->display();
-        }
-    }
+		$this->dv->tpl = 'modules/lxm_report/tpls/ListView.tpl';
 
 
-	function prepareSearchForm()
-    {
-        $this->searchForm = null;
+		//$metadataFile = $this->getMetaDataFile();  
+        //$this->ev = $this->getListView();  
+        //$this->ev->ss =& $this->ss;  
+        //$this->ev->setup($this->module, $this->bean, $metadataFile, get_custom_file_if_exists('modules/lxm_report/tpls/ListView.tpl'));
+	}
 
-        //search
-        $view = 'basic_search';
-        if(!empty($_REQUEST['search_form_view']) && $_REQUEST['search_form_view'] == 'advanced_search')
-            $view = $_REQUEST['search_form_view'];
-        $this->headers = true;
+	function display() {
+		//echo '<div align="center" style="font-color: red">'.$this->lxm_report_warning.'</div>';
+		//display BEFORE the view should be go ABOVE this line
+		//parent::display();
+		//display AFTER the view should go BELOW this line
+		//echo '<div align="center">'.$this->company_logo_path.'<br/>'.$this->company_tagline.'</a></div>';
 
-        if(!empty($_REQUEST['search_form_only']) && $_REQUEST['search_form_only'])
-            $this->headers = false;
-        elseif(!isset($_REQUEST['search_form']) || $_REQUEST['search_form'] != 'false')
-        {
-            if(isset($_REQUEST['searchFormTab']) && $_REQUEST['searchFormTab'] == 'advanced_search')
-            {
-                $view = 'advanced_search';
-            }
-            else
-            {
-                $view = 'basic_search';
-            }
-        }
-
-        $this->use_old_search = true;
-        if ((file_exists('modules/' . $this->module . '/SearchForm.html')
-                && !file_exists('modules/' . $this->module . '/metadata/searchdefs.php'))
-            || (file_exists('custom/modules/' . $this->module . '/SearchForm.html')
-                && !file_exists('custom/modules/' . $this->module . '/metadata/searchdefs.php')))
-        {
-            require_once('include/SearchForm/SearchForm.php');
-            $this->searchForm = new SearchForm($this->module, $this->seed);
-        }
-        else
-        {
-            $this->use_old_search = false;
-            require_once('include/SearchForm/SearchForm2.php');
-
-            $searchMetaData = SearchForm::retrieveSearchDefs($this->module);
-
-            $this->searchForm = $this->getSearchForm2($this->seed, $this->module, $this->action);
-            $this->searchForm->setup($searchMetaData['searchdefs'], $searchMetaData['searchFields'], 'SearchFormGeneric.tpl', $view, $this->listViewDefs);
-            $this->searchForm->lv = $this->lv;
-        }
-    }
-
+		 $smarty = new Sugar_Smarty();
+         $smarty->assign("welcome", 'welcome');
+         $smarty->display($this->dv->tpl);
+	}
 }
 ?>

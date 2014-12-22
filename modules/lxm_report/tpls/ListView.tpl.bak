@@ -1,1 +1,61 @@
-<div style="background:red;width:200px;height:400;">asdadf</div>
+<link rel="stylesheet" type="text/css" href="{sugar_getjspath file='modules/lxm_report/tpls/tabs.css'}"/>
+<script type="text/javascript" src="{sugar_getjspath file='modules/lxm_report/tpls/tabs.js'}"></script>
+<div id="Tab1"> 
+	<div class="Menubox"> 
+		<ul> 
+			<li id="one1" onClick="setTab('one',1,4)" class="hover">联系人基本情况表</li> 
+			<li id="one2" onClick="setTab('one',2,4)" >联系人诉求情况表</li> 
+			<li id="one3" onClick="setTab('one',3,4)">约谈记录表</li>
+		</ul> 
+	</div>
+
+	<div class="Contentbox"> 
+		<div id="con_one_1" class="hover">
+			<div class="search">
+				<form name="search_form" id="search_form" class="search_form" method="post" action="index.php?module=lxm1_lxm_residents&action=index" onkeydown="submitOnEnter(event);">
+					<input type="hidden" name="searchFormTab" value="basic_search">
+					<input type="hidden" name="module" value="lxm1_lxm_residents">
+					<input type="hidden" name="action" value="index"> 
+					<input type="hidden" name="query" value="true">
+					联系人姓名: <input type="text" name="full_name_basic" id="full_name_basic" size="30" maxlength="510" value="" title=""> <input tabindex="2" title="查找 [Alt+Q]" onclick="SUGAR.savedViews.setChooser();" class="button" type="submit" name="button" value="查找" id="search_form_submit">
+				</form>
+			</div>
+
+			<div class="content">
+			
+			</div>
+		</div>
+
+		<div id="con_one_2" style="display:none">
+			<div class="search">
+				<form name="search_form" id="search_form" class="search_form" method="post" action="index.php?module=lxm1_lxm_conversation&amp;action=index" onkeydown="submitOnEnter(event);">
+					联系人姓名: <input type="text" name="full_name_basic" id="full_name_basic" size="30" maxlength="510" value="" title=""> 约谈记录编号: <input type="text" name="name_basic" id="name_basic" size="30" maxlength="255" value="" title="" accesskey="9"> <input tabindex="2" title="查找 [Alt+Q]" onclick="SUGAR.savedViews.setChooser();" class="button" type="submit" name="button" value="查找" id="search_form_submit">
+					<input type="hidden" name="searchFormTab" value="basic_search">
+					<input type="hidden" name="module" value="lxm1_lxm_conversation">
+					<input type="hidden" name="action" value="index"> 
+					<input type="hidden" name="query" value="true">
+				</form>
+			</div>
+
+			<div class="content">
+			
+			</div>
+		</div>
+
+		<div id="con_one_3" style="display:none">
+			<div class="search">
+				<form name="search_form" id="search_form" class="search_form" method="post" action="index.php?module=lxm1_lxm_residents&action=index" onkeydown="submitOnEnter(event);">
+					<input type="hidden" name="searchFormTab" value="basic_search">
+					<input type="hidden" name="module" value="lxm1_lxm_residents">
+					<input type="hidden" name="action" value="index"> 
+					<input type="hidden" name="query" value="true">
+					联系人姓名: <input type="text" name="full_name_basic" id="full_name_basic" size="30" maxlength="510" value="" title=""> <input tabindex="2" title="查找 [Alt+Q]" onclick="SUGAR.savedViews.setChooser();" class="button" type="submit" name="button" value="查找" id="search_form_submit">
+				</form>
+			</div>
+
+			<div class="content">
+			
+			</div>
+		</div>
+	</div> 
+</div>
