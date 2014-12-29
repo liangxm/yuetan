@@ -18,11 +18,9 @@ class lxm_reportViewList extends ViewList
 		//parent::preDisplay();
 
 		$this->dv->tpl = 'modules/lxm_report/tpls/ListView.tpl';
-
-
 		//$metadataFile = $this->getMetaDataFile();  
         //$this->ev = $this->getListView();  
-        //$this->ev->ss =& $this->ss;  
+        //$this->ev->ss = $this->ss;  
         //$this->ev->setup($this->module, $this->bean, $metadataFile, get_custom_file_if_exists('modules/lxm_report/tpls/ListView.tpl'));
 	}
 
@@ -33,9 +31,10 @@ class lxm_reportViewList extends ViewList
 		//display AFTER the view should go BELOW this line
 		//echo '<div align="center">'.$this->company_logo_path.'<br/>'.$this->company_tagline.'</a></div>';
 
-		 $smarty = new Sugar_Smarty();
-         $smarty->assign("welcome", 'welcome');
-         $smarty->display($this->dv->tpl);
+         $smarty = new Sugar_Smarty();
+         //parent::display();
+		 $smarty->assign("welcome","welcome");
+		 $smarty->display($this->dv->tpl);
 	}
 }
 ?>

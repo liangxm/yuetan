@@ -63,9 +63,17 @@ class lxm_report_sugar extends Basic {
 	var $assigned_user_id;
 	var $assigned_user_name;
 	var $assigned_user_link;
+
+	var $query1;
+	var $result1;
 	
 	function lxm_report_sugar(){	
 		parent::Basic();
+
+
+		$query1 = "SELECT * FROM lxm1_lxm_residents where deleted='0'";  
+        $result1 = $this->db->query($query1,true," Error filling in additional detail fields: "); 
+		
 	}
 	
 	function bean_implements($interface){
@@ -73,6 +81,12 @@ class lxm_report_sugar extends Basic {
 			case 'ACL': return true;
 		}
 		return false;
+	}
+
+	public function action_getdata1(){
+		$query1 = "SELECT * FROM lxm1_lxm_residents where deleted='0'";  
+        $result1 = $this->db->query($query1,true," Error filling in additional detail fields: ");
+		return $result1;
 	}
 		
 }
